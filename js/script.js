@@ -10,3 +10,29 @@ posterImg.forEach((item) => {
 </div>
     `;
 });
+
+const swiperScript = document.querySelector('.swiperScript');
+
+studentVoice.forEach((student) => {
+  swiperScript.innerHTML += `
+    <div class="swiper-slide swiperQuotes" id="swiperQtsId">
+						<div class="testimoniolBox">
+							<img src="./img/right-quote.png" alt="quote" class="quoteImg">
+							<div class="content">
+                                <h1 class="titleName">${student.message.title}</h1>
+								<p>${student.message.body}</p>
+								<div class="studentInfo">
+									<div class="studentImageCint"><img src="./img/student/${student.image}" alt=""
+											class="studentImage">
+									</div>
+									<div class="studentDet">
+										<p class="studentName">${student.name}</p>
+										<p class="studentDesignation">${student.department}</p>
+                                        <p class="studentDesignation studentBatch">${student.batch}</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+    `;
+});

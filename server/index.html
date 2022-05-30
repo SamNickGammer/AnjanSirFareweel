@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server</title>
+</head>
+
+<body>
+    <form action="javascript:void(0)">
+        <input type="text" name="name" id="name" placeholder="Enter your name">
+        <input type="text" name="department" id="department" placeholder="Enter your Department">
+        <input type="text" name="batch" id="batch" placeholder="Enter your Batch">
+        <input type="text" name="messTit" id="messTit" placeholder="Enter Message Titel">
+        <input type="text" name="messBody" id="messBody" placeholder="Enter Message Body">
+        <input type="submit" value="Submit" class="formSubmit">
+    </form>
+    <script src="./firebase.js"></script>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-app.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyAsuS6dlbrcnjidJzSYZrAggSJhjEVDCDA",
+            authDomain: "anjanfairwell.firebaseapp.com",
+            databaseURL: "https://anjanfairwell-default-rtdb.firebaseio.com",
+            projectId: "anjanfairwell",
+            storageBucket: "anjanfairwell.appspot.com",
+            messagingSenderId: "534348923954",
+            appId: "1:534348923954:web:b671b70756708cc9a4e82b"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+    </script>
+
+</body>
+
+</html>

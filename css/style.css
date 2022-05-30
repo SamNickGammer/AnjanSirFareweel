@@ -19,6 +19,10 @@
   filter: blur(0px);
   background-color: #fff;
 }
+#swiperContId {
+  height: 75% !important;
+  padding-top: 15rem;
+}
 
 .swiper-slide {
   width: auto !important;
@@ -49,7 +53,9 @@
 #name2 {
   justify-content: flex-end;
 }
-
+.mbVis {
+  display: none;
+}
 #name-div {
   position: absolute;
   top: 17.5vh;
@@ -68,8 +74,9 @@
 .testimoniolBox {
   position: relative;
   width: 100%;
+  height: 100%;
   padding: 40px;
-  padding-top: 90px;
+  padding-top: 30px;
   /* display: flex;
   flex-direction: column; */
 }
@@ -82,7 +89,12 @@
   opacity: 0.2;
 }
 .content {
-  width: 50%;
+  /* width: 50%; */
+  width: 85%;
+}
+.titleName {
+  font-size: 25px;
+  font-weight: 700;
 }
 .quoteInner {
   width: auto !important;
@@ -91,16 +103,102 @@
 .swiper-3d .swiper-slide-shadow-right {
   background-image: none !important;
 }
+#swiperQtsId {
+  width: 50rem !important;
+}
+.studentImage {
+  height: 100%;
+  /* width: 100px; */
+}
+.studentInfo {
+  display: flex;
+  align-items: center;
+  width: 40rem;
+  flex-direction: row-reverse;
+  position: absolute;
+  bottom: 35px;
+  /* bottom: -150px; */
+  left: 50px;
+}
+.studentDet {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  margin-right: 10px;
+}
+.studentName {
+  font-family: 'badaboom_bbregular';
+  font-size: 3rem;
+  color: rgb(0, 0, 0);
+  margin-bottom: -5px;
+}
+.studentDesignation {
+  font-family: 'badaboom_bbregular';
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+  margin-bottom: -5px;
+}
+.studentBatch {
+  font-size: 1.5rem;
+}
+.studentImageCint {
+  height: 110px;
+  width: 110px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+
 @media screen and (orientation: portrait) {
   .res {
     margin-left: 60px;
     width: 20vw;
     height: 300px;
   }
+  .mbHid {
+    display: none;
+  }
   #name1 {
     visibility: hidden;
   }
   #name2 {
     margin-left: 50px;
+    margin-top: -50px;
+    text-align: end;
+  }
+  .swiper-container {
+    height: 25vh !important;
+  }
+  .story_carousel {
+    top: -170px;
+  }
+  .mob_swipe_txt {
+    top: -160px;
+  }
+  #swiperContId {
+    height: 45% !important;
+  }
+  .mbVis {
+    display: block;
+  }
+  #swiperQtsId {
+    width: 32rem !important;
+  }
+  .testimoniolBox .quoteImg {
+    width: 50px;
+    height: 50px;
+  }
+  .content {
+    /* width: 50%; */
+    width: 100%;
+  }
+  .studentImageCint {
+    display: none;
+  }
+  .studentInfo {
+    display: none;
   }
 }

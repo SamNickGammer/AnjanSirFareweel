@@ -32,7 +32,8 @@
 	<div class="section1">
 		<div id="name-div">
 			<div id="name1" class="name">Anjan</div>
-			<div id="name2" class="name">Sir</div>
+			<div id="name2" class="name mbHid">Sir</div>
+			<div id="name2" class="name mbVis">Anjan <br> Sir</div>
 		</div>
 		<div class="anjanImg res">
 			<img class="anjanImg class_disable" style="position: absolute; width: auto; height: 80%;"
@@ -81,42 +82,8 @@
 	</div>
 	<div class="section6">
 		<div class="section_inner quoteInner">
-			<div class="swiper-container swiperCont" style="height: 75% !important;padding-top: 15rem;">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide swiperQuotes" style="width: 50rem !important;">
-						<div class="testimoniolBox">
-							<img src="./img/right-quote.png" alt="quote" class="quoteImg">
-							<div class="content">
-								<p> In this article, I'd like to reacquaint you with the humble workhorse of
-									communication that is the paragraph. Paragraphs are everywhere. In fact, at the high
-									risk of stating the obvious, you are reading one now. Despite their ubiquity, we
-									frequently neglect their presentation. This is a mistake.</p>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide swiperQuotes" style="width: 50rem !important;">
-						<div class="testimoniolBox">
-							<img src="./img/right-quote.png" alt="quote" class="quoteImg">
-							<div class="content">
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores temporibus delectus
-									laudantium nostrum deserunt illum recusandae, cumque esse neque exercitationem ex
-									doloribus ab corporis fugit soluta libero fuga, aliquid sapiente?</p>
-
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide swiperQuotes" style="width: 50rem !important;">
-						<div class="testimoniolBox">
-							<img src="./img/right-quote.png" alt="quote" class="quoteImg">
-							<div class="content">
-								<p>t's not only writers who can benefit from this free online tool. If you're a
-									programmer who's working on a project where blocks of text are needed, this tool can
-									be a great way to get that. It's a good way to test your programming and that the
-									tool being created is working well.</p>
-
-							</div>
-						</div>
-					</div>
+			<div class="swiper-container swiperCont" id="swiperContId">
+				<div class="swiper-wrapper swiperScript">
 				</div>
 			</div>
 		</div>
@@ -136,6 +103,24 @@
 		<script src="./db/insider.js"></script>
 		<script src="./js/script.js"></script>
 		<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+
+		<script type="module">
+			import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-app.js";
+
+			const firebaseConfig = {
+				apiKey: "AIzaSyAsuS6dlbrcnjidJzSYZrAggSJhjEVDCDA",
+				authDomain: "anjanfairwell.firebaseapp.com",
+				databaseURL: "https://anjanfairwell-default-rtdb.firebaseio.com",
+				projectId: "anjanfairwell",
+				storageBucket: "anjanfairwell.appspot.com",
+				messagingSenderId: "534348923954",
+				appId: "1:534348923954:web:b671b70756708cc9a4e82b"
+			};
+
+			// Initialize Firebase
+			const app = initializeApp(firebaseConfig);
+		</script>
 
 		<script>
 			var swaiper = new Swiper(".swiperCont", {
