@@ -1,33 +1,101 @@
-// const posterImg = [
-//   {
-//     id: 1,
-//     alt: 'Img1',
-//   },
-//   {
-//     id: 2,
-//     alt: 'Img2',
-//   },
-//   {
-//     id: 3,
-//     alt: 'Img3',
-//   },
-//   {
-//     id: 4,
-//     alt: 'Img4',
-//   },
-//   {
-//     id: 5,
-//     alt: 'Img5',
-//   },
-//   {
-//     id: 6,
-//     alt: 'Img6',
-//   },
-//   {
-//     id: 7,
-//     alt: 'Img7',
-//   },
-// ];
+const posterImg = [
+  {
+    id: 1,
+    alt: 'Img1',
+  },
+  {
+    id: 2,
+    alt: 'Img2',
+  },
+  {
+    id: 3,
+    alt: 'Img3',
+  },
+  {
+    id: 4,
+    alt: 'Img4',
+  },
+  {
+    id: 5,
+    alt: 'Img5',
+  },
+  {
+    id: 6,
+    alt: 'Img6',
+  },
+  {
+    id: 7,
+    alt: 'Img7',
+  },
+  {
+    id: 8,
+    alt: 'Img8',
+  },
+  {
+    id: 9,
+    alt: 'Img9',
+  },
+  {
+    id: 10,
+    alt: 'Img10',
+  },
+  {
+    id: 11,
+    alt: 'Img11',
+  },
+  {
+    id: 12,
+    alt: 'Img12',
+  },
+  {
+    id: 13,
+    alt: 'Img13',
+  },
+  {
+    id: 14,
+    alt: 'Img14',
+  },
+  {
+    id: 15,
+    alt: 'Img15',
+  },
+  {
+    id: 16,
+    alt: 'Img16',
+  },
+  {
+    id: 17,
+    alt: 'Img17',
+  },
+  {
+    id: 18,
+    alt: 'Img18',
+  },
+  {
+    id: 19,
+    alt: 'Img19',
+  },
+  {
+    id: 20,
+    alt: 'Img20',
+  },
+  {
+    id: 21,
+    alt: 'Img21',
+  },
+  {
+    id: 22,
+    alt: 'Img22',
+  },
+  {
+    id: 23,
+    alt: 'Img23',
+  },
+  {
+    id: 24,
+    alt: 'Img24',
+  },
+];
 
 const studentVoice = [
   {
