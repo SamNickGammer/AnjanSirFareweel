@@ -1,15 +1,38 @@
 const imageWrapper = document.querySelector('.imageWrapper');
 
-posterImg.forEach((item) => {
-  imageWrapper.innerHTML += `
+var folder = '../img/poster';
+
+$.ajax({
+  url: folder,
+  success: function (data) {
+    $(data)
+      .find('a')
+      .attr('href', function (i, val) {
+        if (val.match(/\.(jpe?g|png|gif)$/)) {
+          // $("body").append( "<img src='"+ folder + val +"'>" );
+          imageWrapper.innerHTML += `
     <div class="swiper-slide">
     <div class="image-wrapper">
-        <img class="s_story5 class_disable animated animate_story_txt" src="./img/poster/${item.id}.jpg"
+        <img class="s_story5 class_disable animated animate_story_txt" src="${val}"
             alt="Poster" />
     </div>
 </div>
     `;
+        }
+      });
+  },
 });
+
+// posterImg.forEach((item) => {
+//   imageWrapper.innerHTML += `
+//     <div class="swiper-slide">
+//     <div class="image-wrapper">
+//         <img class="s_story5 class_disable animated animate_story_txt" src="./img/poster/${item.id}.jpg"
+//             alt="Poster" />
+//     </div>
+// </div>
+//     `;
+// });
 
 const swiperScript = document.querySelector('.swiperScript');
 
